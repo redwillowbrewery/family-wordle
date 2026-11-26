@@ -18,3 +18,19 @@ footer{text-align:center;padding-bottom:8px}.primary{border:0;border-radius:5px;
 dialog{border:0;border-radius:8px;background:var(--panel);color:var(--text);max-width:420px;width:calc(100% - 32px);padding:0}dialog::backdrop{background:#000b}.modal{padding:24px;position:relative}.modal h2{margin-top:0}.close{position:absolute;right:12px;top:8px}.sample{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;font-weight:800;margin-right:8px}.sample.correct{background:var(--correct)}.sample.present{background:var(--present)}.sample.absent{background:var(--absent)}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center}.stats div{display:flex;flex-direction:column}.stats strong{font-size:28px}.stats span{font-size:11px;color:var(--muted)}
 @media(max-height:700px){.topbar{height:56px}.message{height:30px}.keyboard{margin-top:8px}.key{height:48px}.board{max-height:350px}}
+
+.game-nav {display:flex;justify-content:center;gap:1.5rem}
+.game-nav a {padding:.6rem .25rem;color:var(--muted);text-decoration:none;font-weight:700}
+.game-nav [aria-current] {color:var(--text);border-bottom:3px solid var(--correct)}
+.maths-header {padding:16px;text-align:center;border-bottom:1px solid var(--border)}
+.challenge {padding:1rem .75rem 2rem;font-size:1.06rem;line-height:1.55}
+.challenge h2 {margin:.25rem 0;font-size:1.85rem;line-height:1.2}
+.topic {color:#aac7a6;font-size:.9rem;font-weight:bold;margin-bottom:.35rem}
+.challenge details,.challenge aside {border-top:1px solid var(--border);padding:.8rem 0}
+.challenge summary {cursor:pointer;font-weight:bold}
+.challenge form {margin:1.3rem 0 .5rem}
+.entry {display:flex;gap:.6rem;margin-top:.45rem}
+.entry input {min-width:0;flex:1;font:inherit;padding:.5rem;color:var(--text);background:var(--panel);border:1px solid var(--key);border-radius:5px}
+.challenge small {color:var(--muted)}
+.challenge h3 {margin:.35rem 0}
+#feedback:empty {display:none}
